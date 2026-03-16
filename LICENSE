@@ -14,7 +14,7 @@ sorgente, la documentazione e tutti i file distribuiti con esso.
 "Utente": qualsiasi persona fisica o giuridica che utilizza il Software.
 
 "API Fatture in Cloud": le application programming interface v2 di Fatture in
-Cloud, di proprieta di TeamSystem S.p.A.
+Cloud, di proprietà di TeamSystem S.p.A.
 
 
 2. CONCESSIONE DELLA LICENZA
@@ -22,15 +22,15 @@ Cloud, di proprieta di TeamSystem S.p.A.
 L'Autore concede all'Utente una licenza non esclusiva, non trasferibile e
 revocabile per utilizzare il Software alle seguenti condizioni:
 
-a) L'Utente puo utilizzare il Software esclusivamente nell'ambito della
-   propria attivita imprenditoriale, artigianale, commerciale o professionale.
+a) L'Utente può utilizzare il Software esclusivamente nell'ambito della
+   propria attività imprenditoriale, artigianale, commerciale o professionale.
 
-b) L'Utente puo modificare il Software per uso interno.
+b) L'Utente può modificare il Software per uso interno.
 
-c) L'Utente NON puo redistribuire, sublicenziare, vendere o cedere a terzi
+c) L'Utente NON può redistribuire, sublicenziare, vendere o cedere a terzi
    il Software, in tutto o in parte, senza autorizzazione scritta dell'Autore.
 
-d) L'Utente NON puo rimuovere o modificare le note di copyright, le
+d) L'Utente NON può rimuovere o modificare le note di copyright, le
    attribuzioni o i riferimenti legali presenti nel Software.
 
 
@@ -38,7 +38,7 @@ d) L'Utente NON puo rimuovere o modificare le note di copyright, le
 
 L'utilizzo del Software richiede:
 
-a) Un account Fatture in Cloud attivo con piano valido, di proprieta
+a) Un account Fatture in Cloud attivo con piano valido, di proprietà
    dell'Utente.
 
 b) Un Access Token API generato dall'Utente sul proprio account Fatture in
@@ -50,7 +50,7 @@ c) L'accettazione e il rispetto delle Condizioni Generali di Utilizzo delle
 d) L'accettazione e il rispetto della Policy di Acceptable Use di TeamSystem
    (https://developers.fattureincloud.it/docs/legal/policy-acceptable-use/).
 
-L'Utente e esclusivo responsabile dell'ottenimento e del mantenimento del
+L'Utente è esclusivo responsabile dell'ottenimento e del mantenimento del
 proprio account Fatture in Cloud e del relativo Access Token.
 
 
@@ -58,7 +58,7 @@ proprio account Fatture in Cloud e del relativo Access Token.
 
 L'Utente si impegna a NON:
 
-a) Utilizzare il Software per finalita illegali o in violazione delle leggi
+a) Utilizzare il Software per finalità illegali o in violazione delle leggi
    applicabili.
 
 b) Condividere il proprio Access Token con terzi o pubblicarlo in repository
@@ -72,44 +72,44 @@ d) Rivendere o redistribuire il Software come prodotto autonomo.
 e) Utilizzare il Software in modo da violare i termini di servizio di
    Fatture in Cloud o di TeamSystem S.p.A.
 
-f) Utilizzare il Software per attivita di consumo (non professionale).
+f) Utilizzare il Software per attività di consumo (non professionale).
 
 g) Superare consapevolmente i limiti e le quote di utilizzo delle API
    stabiliti da TeamSystem S.p.A.
 
 
-5. PROPRIETA INTELLETTUALE
+5. PROPRIETÀ INTELLETTUALE
 
-a) Il codice sorgente del Software e di proprieta dell'Autore.
+a) Il codice sorgente del Software è di proprietà dell'Autore.
 
-b) "Fatture in Cloud" e un marchio registrato di TeamSystem S.p.A.
+b) "Fatture in Cloud" è un marchio registrato di TeamSystem S.p.A.
    (C.F. e P. IVA 01035310414, sede in Via Sandro Pertini, 88 - 61122
    Pesaro). Tutti i diritti sul marchio, sul software Fatture in Cloud e
-   sulle relative API sono di esclusiva proprieta di TeamSystem S.p.A.
+   sulle relative API sono di esclusiva proprietà di TeamSystem S.p.A.
 
-c) Il Software NON e affiliato, associato, autorizzato, approvato o in
+c) Il Software NON è affiliato, associato, autorizzato, approvato o in
    alcun modo collegato ufficialmente a TeamSystem S.p.A.
 
 d) La presente licenza non concede alcun diritto sulle API, sul software
-   Fatture in Cloud, sui marchi o su qualsiasi altra proprieta intellettuale
+   Fatture in Cloud, sui marchi o su qualsiasi altra proprietà intellettuale
    di TeamSystem S.p.A.
 
 
-6. CONFORMITA AI TERMINI API TEAMSYSTEM
+6. CONFORMITÀ AI TERMINI API TEAMSYSTEM
 
 L'Utente riconosce e accetta che:
 
-a) L'utilizzo delle API Fatture in Cloud tramite il Software e soggetto
+a) L'utilizzo delle API Fatture in Cloud tramite il Software è soggetto
    alle Condizioni Generali di Utilizzo delle API TeamSystem, che l'Utente
    deve accettare separatamente.
 
-b) TeamSystem S.p.A. puo modificare in qualsiasi momento le condizioni di
-   utilizzo delle API, i limiti, le quote e le funzionalita disponibili.
+b) TeamSystem S.p.A. può modificare in qualsiasi momento le condizioni di
+   utilizzo delle API, i limiti, le quote e le funzionalità disponibili.
 
-c) TeamSystem S.p.A. puo sospendere o revocare l'accesso alle API in caso
+c) TeamSystem S.p.A. può sospendere o revocare l'accesso alle API in caso
    di violazione dei termini di servizio.
 
-d) Alcune funzionalita del Software (come l'invio della fattura elettronica
+d) Alcune funzionalità del Software (come l'invio della fattura elettronica
    allo SDI) richiedono un piano a pagamento su Fatture in Cloud.
 
 e) L'Utente deve seguire il Principio del Minimo Privilegio nella
@@ -117,15 +117,15 @@ e) L'Utente deve seguire il Principio del Minimo Privilegio nella
    necessari.
 
 f) Ai sensi del paragrafo 5.7 delle Condizioni Generali di TeamSystem, la
-   responsabilita di TeamSystem S.p.A. verso lo sviluppatore non puo
+   responsabilità di TeamSystem S.p.A. verso lo sviluppatore non puo
    eccedere Euro 300,00.
 
 
 7. ESCLUSIONE DI GARANZIA
 
-IL SOFTWARE E FORNITO "COSI COM'E" (AS IS), SENZA GARANZIE DI ALCUN TIPO,
+IL SOFTWARE È FORNITO "COSÌ COM'E" (AS IS), SENZA GARANZIE DI ALCUN TIPO,
 ESPRESSE O IMPLICITE, INCLUSE, A TITOLO ESEMPLIFICATIVO E NON ESAUSTIVO,
-LE GARANZIE DI COMMERCIABILITA, IDONEITA A UNO SCOPO PARTICOLARE E NON
+LE GARANZIE DI COMMERCIABILITÀ, IDONEITÀ A UNO SCOPO PARTICOLARE E NON
 VIOLAZIONE DI DIRITTI DI TERZI.
 
 L'Autore non garantisce che:
@@ -135,40 +135,40 @@ L'Autore non garantisce che:
 - Il Software sia disponibile in modo continuativo
 
 
-8. LIMITAZIONE DI RESPONSABILITA
+8. LIMITAZIONE DI RESPONSABILITÀ
 
-IN NESSUN CASO L'AUTORE SARA RESPONSABILE PER DANNI DIRETTI, INDIRETTI,
+IN NESSUN CASO L'AUTORE SARÀ RESPONSABILE PER DANNI DIRETTI, INDIRETTI,
 INCIDENTALI, SPECIALI, CONSEQUENZIALI O PUNITIVI, INCLUSI, A TITOLO
 ESEMPLIFICATIVO, PERDITA DI DATI, PERDITA DI PROFITTI, INTERRUZIONE
-DELL'ATTIVITA O QUALSIASI ALTRA PERDITA COMMERCIALE, DERIVANTI DALL'USO
-O DALL'IMPOSSIBILITA DI USARE IL SOFTWARE.
+DELL'ATTIVITÀ O QUALSIASI ALTRA PERDITA COMMERCIALE, DERIVANTI DALL'USO
+O DALL'IMPOSSIBILITÀ DI USARE IL SOFTWARE.
 
-TeamSystem S.p.A. non e responsabile per il Software e non fornisce supporto
+TeamSystem S.p.A. non è responsabile per il Software e non fornisce supporto
 per esso.
 
 
 9. PROTEZIONE DEI DATI PERSONALI
 
-L'Utente e esclusivo responsabile del trattamento dei dati personali
-effettuato tramite il Software, in conformita con il Regolamento (UE)
+L'Utente è esclusivo responsabile del trattamento dei dati personali
+effettuato tramite il Software, in conformità con il Regolamento (UE)
 2016/679 (GDPR) e con il D.Lgs. 196/2003 e successive modifiche.
 
 L'Utente si impegna a:
 - Trattare i dati personali nel rispetto dei principi di minimizzazione,
-  integrita e riservatezza
+  integrità e riservatezza
 - Non includere nei documenti dati non necessari ai fini fiscali
 - Proteggere adeguatamente l'Access Token e le credenziali di accesso
 
 
 10. DURATA E RISOLUZIONE
 
-a) La presente licenza e valida a tempo indeterminato dalla data di primo
+a) La presente licenza è valida a tempo indeterminato dalla data di primo
    utilizzo del Software.
 
-b) L'Autore puo revocare la licenza in qualsiasi momento in caso di
+b) L'Autore può revocare la licenza in qualsiasi momento in caso di
    violazione dei presenti termini.
 
-c) L'Utente puo cessare l'utilizzo del Software in qualsiasi momento.
+c) L'Utente può cessare l'utilizzo del Software in qualsiasi momento.
 
 d) In caso di cessazione, l'Utente deve eliminare tutte le copie del
    Software in suo possesso.
@@ -176,8 +176,8 @@ d) In caso di cessazione, l'Utente deve eliminare tutte le copie del
 
 11. LEGGE APPLICABILE E FORO COMPETENTE
 
-La presente licenza e regolata dalla legge italiana. Per qualsiasi
-controversia derivante dalla presente licenza sara competente in via
+La presente licenza è regolata dalla legge italiana. Per qualsiasi
+controversia derivante dalla presente licenza sarà competente in via
 esclusiva il Foro di Caserta.
 
 

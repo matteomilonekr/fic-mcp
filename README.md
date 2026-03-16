@@ -70,10 +70,10 @@ Il Company ID lo trovi nella URL di Fatture in Cloud quando sei loggato. Guarda 
 ```
 https://secure.fattureincloud.it/dashboard/XXXXXX
                                               ^^^^^^
-                                          questo e il tuo Company ID
+                                          questo è il tuo Company ID
 ```
 
-Oppure, dopo aver configurato il token, puoi usare il tool `list_companies` che te lo mostrera.
+Oppure, dopo aver configurato il token, puoi usare il tool `list_companies` che te lo mostrerà.
 
 ### Passo 5: Configura le variabili ambiente
 
@@ -138,7 +138,7 @@ Sostituisci `/percorso/completo/` con il percorso dove hai scaricato il reposito
 
 #### Opzione C: Cursor / Windsurf
 
-Segui la documentazione del tuo editor per aggiungere server MCP. La configurazione e simile a Claude Desktop: servono il comando `python3`, il percorso al file `server.py`, e le due variabili ambiente.
+Segui la documentazione del tuo editor per aggiungere server MCP. La configurazione è simile a Claude Desktop: servono il comando `python3`, il percorso al file `server.py`, e le due variabili ambiente.
 
 ### Passo 7: Verifica che funzioni
 
@@ -148,7 +148,7 @@ Apri Claude e prova a chiedere:
 Mostrami le informazioni della mia azienda su Fatture in Cloud
 ```
 
-Se tutto e configurato correttamente, Claude usera il tool `get_company_info` e ti mostrera i dati della tua azienda.
+Se tutto è configurato correttamente, Claude userà il tool `get_company_info` e ti mostrerà i dati della tua azienda.
 
 ## Cosa puoi fare (60 tool)
 
@@ -169,13 +169,13 @@ Se tutto e configurato correttamente, Claude usera il tool `get_company_info` e 
 - "Verifica l'XML della fattura 456 prima di inviarla"
 - "Fai un test di invio SDI (dry run) sulla fattura 456"
 - "Invia la fattura 456 allo SDI"
-- "Perche la fattura 321 e stata rifiutata dallo SDI?"
+- "Perché la fattura 321 è stata rifiutata dallo SDI?"
 
 ### Prodotti
 - "Lista i prodotti nel catalogo"
 - "Crea un prodotto: Consulenza SEO, 150 euro all'ora"
 
-### Contabilita
+### Contabilità
 - "Mostrami la prima nota di marzo"
 - "Quali sono i miei metodi di pagamento?"
 - "Lista i corrispettivi"
@@ -231,7 +231,7 @@ Configura solo gli scope che ti servono (Principio del Minimo Privilegio):
 Le variabili ambiente non sono state impostate. Segui il Passo 5.
 
 **Errore 401 (Unauthorized)**
-Il token e scaduto, non valido o revocato. Genera un nuovo token dal Passo 3.
+Il token è scaduto, non valido o revocato. Genera un nuovo token dal Passo 3.
 
 **Errore 403 (Forbidden)**
 Il token non ha i permessi necessari. Verifica gli scope configurati.
@@ -249,10 +249,10 @@ Chiedi a Claude "Mostrami le aziende collegate al mio account" per trovare il tu
 
 Questo progetto utilizza le [API v2 di Fatture in Cloud](https://developers.fattureincloud.it/) nel rispetto delle [Condizioni Generali di Utilizzo delle API TeamSystem](https://developers.fattureincloud.it/docs/legal/terms/).
 
-- Questo software **NON e affiliato** a TeamSystem S.p.A. o a Fatture in Cloud
-- "Fatture in Cloud" e un marchio registrato di TeamSystem S.p.A.
+- Questo software **NON è affiliato** a TeamSystem S.p.A. o a Fatture in Cloud
+- "Fatture in Cloud" è un marchio registrato di TeamSystem S.p.A.
 - Ogni utente deve utilizzare il proprio account e il proprio Access Token
-- L'utilizzo e riservato ad attivita professionali e imprenditoriali
-- Alcune funzionalita richiedono un piano a pagamento su Fatture in Cloud
+- L'utilizzo è riservato ad attività professionali e imprenditoriali
+- Alcune funzionalità richiedono un piano a pagamento su Fatture in Cloud
 
 Per i dettagli completi, consulta [LICENSE](LICENSE) e [LEGAL_NOTICE.md](LEGAL_NOTICE.md).
