@@ -96,7 +96,7 @@ def get_company_info() -> dict:
 
 @mcp.tool(tags={"companies"})
 def get_company_plan_usage() -> dict:
-    """Verifica l'utilizzo del piano corrente (limiti API, funzionalita disponibili)."""
+    """Verifica l'utilizzo del piano corrente (limiti API, funzionalità disponibili)."""
     cid = _get_company_id()
     return _api("GET", f"/c/{cid}/company/plan_usage")
 
@@ -160,7 +160,7 @@ def create_client(
         vat_number: Partita IVA
         tax_code: Codice fiscale
         address_street: Indirizzo (via e numero)
-        address_city: Citta
+        address_city: Città
         address_province: Provincia (sigla, es. MI)
         address_postal_code: CAP
         country: Paese (es. Italia)
@@ -341,7 +341,7 @@ def create_product(
         code: Codice prodotto
         net_price: Prezzo netto di vendita
         net_cost: Costo netto
-        measure: Unita di misura (es. 'pz', 'ore', 'kg')
+        measure: Unità di misura (es. 'pz', 'ore', 'kg')
         description: Descrizione
     """
     cid = _get_company_id()
@@ -811,7 +811,7 @@ def create_webhook(sink: str, event_type: str) -> dict:
     """Crea una nuova sottoscrizione webhook.
 
     Args:
-        sink: URL endpoint che ricevera le notifiche
+        sink: URL endpoint che riceverà le notifiche
         event_type: Tipo di evento (es. 'issued_documents.invoices.create', 'entities.clients.update')
     """
     cid = _get_company_id()
@@ -885,7 +885,7 @@ def list_languages() -> dict:
 
 @mcp.tool(tags={"info", "system"})
 def list_units_of_measure() -> dict:
-    """Lista le unita di misura disponibili."""
+    """Lista le unità di misura disponibili."""
     return _api("GET", "/info/measures")
 
 
