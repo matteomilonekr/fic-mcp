@@ -19,136 +19,52 @@ Tu:     "Invia la fattura 12345 allo SDI"
 Claude:  chiama send_einvoice e la fattura elettronica parte
 ```
 
-## Guida all'installazione (passo passo)
+## Guida all'installazione
 
-### Passo 1: Installa Python e FastMCP
-
-Serve Python 3.10 o superiore. Verifica con:
-
-```bash
-python3 --version
-```
-
-Poi installa FastMCP:
-
-```bash
-pip install fastmcp
-```
-
-### Passo 2: Scarica il server
-
-```bash
-git clone https://github.com/matteomilonekr/fic-mcp.git
-```
-
-Oppure scarica direttamente il file `server.py` dal repository.
-
-### Passo 3: Ottieni il token API da Fatture in Cloud
+### Passo 1: Ottieni il token da Fatture in Cloud
 
 1. Vai su [secure.fattureincloud.it](https://secure.fattureincloud.it) e accedi
-2. Clicca sull'icona ingranaggio in alto a destra per andare nelle **Impostazioni**
-3. Nella barra laterale, clicca su **Sviluppatori**
-4. Se non hai ancora un'app, clicca su **Crea applicazione**
-   - Dai un nome (es. "MCP Server")
-   - Nella sezione Autenticazione, attiva **Token Manuale**
-   - Clicca **Salva**
-5. Clicca su **Gestisci** accanto alla tua app
-6. Scorri fino alla sezione **Token Manuali**
-7. Clicca **Genera nuovo token**
-8. Seleziona i permessi (scope) che ti servono:
-   - Per iniziare, seleziona almeno: `entity.clients:r`, `issued_documents.invoices:r`
-   - Se vuoi anche creare fatture: `issued_documents.invoices:a`
-   - Se vuoi gestire tutto: seleziona tutti gli scope con `:a`
-9. Seleziona l'azienda su cui vuoi operare
-10. Clicca **Genera**
-11. **Copia il token** (viene mostrato solo una volta)
+2. Vai su **Impostazioni** (icona ingranaggio), poi **Sviluppatori**
+3. Crea un'applicazione (se non ne hai una), attiva **Token Manuale**, salva
+4. Clicca **Gestisci**, scorri fino a **Token Manuali**
+5. Clicca **Genera nuovo token**
+6. Seleziona i permessi che ti servono e l'azienda
+7. Copia il token (viene mostrato solo una volta)
 
-### Passo 4: Trova il tuo Company ID
+### Passo 2: Trova il tuo Company ID
 
-Il Company ID lo trovi nella URL di Fatture in Cloud quando sei loggato. Guarda nella barra degli indirizzi del browser:
+Guardalo nella barra degli indirizzi quando sei su Fatture in Cloud:
 
 ```
 https://secure.fattureincloud.it/dashboard/XXXXXX
-                                              ^^^^^^
-                                          questo è il tuo Company ID
 ```
 
-Oppure, dopo aver configurato il token, puoi usare il tool `list_companies` che te lo mostrerà.
+Quei numeri dopo `/dashboard/` sono il tuo Company ID.
 
-### Passo 5: Configura le variabili ambiente
+Oppure, dopo aver configurato il token, puoi chiedere a Claude "Mostrami le aziende collegate al mio account" e lui te lo mostrerà.
 
-Su **Mac/Linux**, apri il terminale e scrivi:
+### Passo 3: Installa l'MCP
 
-```bash
-export FIC_ACCESS_TOKEN="incolla-qui-il-tuo-token"
-export FIC_COMPANY_ID="12345"
-```
-
-Per renderle permanenti, aggiungile al file `~/.zshrc` (Mac) o `~/.bashrc` (Linux):
-
-```bash
-echo 'export FIC_ACCESS_TOKEN="il-tuo-token"' >> ~/.zshrc
-echo 'export FIC_COMPANY_ID="12345"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-Su **Windows** (PowerShell):
-
-```powershell
-$env:FIC_ACCESS_TOKEN = "il-tuo-token"
-$env:FIC_COMPANY_ID = "12345"
-```
-
-### Passo 6: Connetti a Claude
-
-#### Opzione A: Claude Code (terminale)
+Apri il terminale e lancia questo comando:
 
 ```bash
 claude mcp add fatture-in-cloud \
-  -e FIC_ACCESS_TOKEN="il-tuo-token" \
-  -e FIC_COMPANY_ID="12345" \
-  -- python3 /percorso/completo/fic-mcp/server.py
+  -e FIC_ACCESS_TOKEN="IL-TUO-TOKEN" \
+  -e FIC_COMPANY_ID="IL-TUO-ID" \
+  -- uvx --from git+https://github.com/matteomilonekr/fic-mcp.git fastmcp run server.py
 ```
 
-Sostituisci `/percorso/completo/` con il percorso dove hai scaricato il repository.
+Sostituisci `IL-TUO-TOKEN` con il token copiato al Passo 1 e `IL-TUO-ID` con il Company ID del Passo 2.
 
-#### Opzione B: Claude Desktop (app)
+### Passo 4: Verifica che funzioni
 
-1. Apri Claude Desktop
-2. Vai su **Impostazioni > Sviluppatore > Modifica configurazione**
-3. Si apre il file `claude_desktop_config.json`
-4. Aggiungi questa sezione dentro `mcpServers`:
-
-```json
-{
-  "mcpServers": {
-    "fatture-in-cloud": {
-      "command": "python3",
-      "args": ["/percorso/completo/fic-mcp/server.py"],
-      "env": {
-        "FIC_ACCESS_TOKEN": "il-tuo-token",
-        "FIC_COMPANY_ID": "12345"
-      }
-    }
-  }
-}
-```
-
-5. Salva e riavvia Claude Desktop
-
-#### Opzione C: Cursor / Windsurf
-
-Segui la documentazione del tuo editor per aggiungere server MCP. La configurazione è simile a Claude Desktop: servono il comando `python3`, il percorso al file `server.py`, e le due variabili ambiente.
-
-### Passo 7: Verifica che funzioni
-
-Apri Claude e prova a chiedere:
+Apri Claude e scrivi:
 
 ```
 Mostrami le informazioni della mia azienda su Fatture in Cloud
 ```
 
-Se tutto è configurato correttamente, Claude userà il tool `get_company_info` e ti mostrerà i dati della tua azienda.
+Se vedi i dati della tua azienda, è tutto configurato.
 
 ## Cosa puoi fare (60 tool)
 
